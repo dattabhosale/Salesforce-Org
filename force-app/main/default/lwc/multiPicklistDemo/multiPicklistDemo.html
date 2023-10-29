@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Wire Demo">
+      <div class="slds-m-around_medium">
+        <lightning-combobox
+          name="type"
+          label="Type"
+          value={seletedType}
+          placeholder="Select Type"
+          options={typeOptions}
+          onchange={handleChange} 
+        ></lightning-combobox>
+        <div>Selected Type value is : {seletedType}</div>
+
+        <lightning-combobox
+          name="stagename"
+          label="StageName"
+          value={selectedStage}
+          placeholder="Select Stage"
+          options={stageOptions}
+          onchange={handleChange}   
+        ></lightning-combobox>
+
+        <div>Selected Stage value is : {selectedStage}</div>
+      </div>
+    </lightning-card>
+</template>

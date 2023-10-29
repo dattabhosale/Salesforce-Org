@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Wire Demo">
+        <div class="slds-var-m-around_medium">
+            <table class="slds-table slds-table_cell-buffer slds-table_col-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={cont} for:item="c">
+                        <tr key={c.fields.Id.value}>
+                            <td>{c.fields.Name.value}</td>
+                            <td>{c.fields.Email.value}</td>
+                            <td>{c.fields.Title.value}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        <div class="slds-grid">
+            <div class="slds-var-m-around_medium">
+                <lightning-button 
+                  variant="brand"
+                  label="Next" 
+                  onclick={handleNextClick} 
+                  ></lightning-button>
+            </div>
+            <div class="slds-var-m-around_medium">
+                    <lightning-button 
+                      variant="Brand"
+                      label="Back" 
+                      onclick={handlePreviouseClick} 
+                    ></lightning-button>
+                </div>
+        </div>
+    </lightning-card>
+</template>

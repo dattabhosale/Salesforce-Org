@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Practice Component">
+        <div class="slds-m-around-medium">
+            <div>Course Name is : {courseName}</div>
+            <lightning-input type="text" label="Enter Value" onkeyup={onchangehandler}></lightning-input>
+        </div>
+    </lightning-card>
+    <lightning-card title="Second Component">
+        <div class="slds-m-around_small">
+            <h1>Hello from second component</h1>
+            <div>City Name is : {obj.city}</div>
+            <lightning-input type="text" label="Enter value" onkeyup={onchangehandler1}></lightning-input>
+        </div>
+    </lightning-card>
+    <lightning-card title="Third Component">
+        <div class="slds-m-around_medium">
+            <div>Hello From : {ob.company}</div>
+            <lightning-input type="text" label="Enter company name" onkeyup={onchangehandler2}></lightning-input>
+        </div>
+    </lightning-card>
+    <lightning-card title="4th component">
+        <div class="slds-m-around_small">
+            <template lwc:if={istrue}>
+                <h1></h>first value of array is {af}</h1>
+            </template>
+            <lightning-button variant="brand" label="Brand" title="Button" onclick={onclickhandler} class="slds-m-around-medium"></lightning-button>
+            <template for:each={array} for:item="arr">
+                <div key={arr}>{arr}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

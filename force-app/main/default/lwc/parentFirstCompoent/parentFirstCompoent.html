@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <div>Parent Component</div>
+            <div>Value Received From Child is : {ms}</div>
+            <div>Value Received From Child is : {abc}</div>
+            <c-child-first-component
+            onsendhandler={receiveHandler}
+            >
+
+            </c-child-first-component>
+        </div>
+    </lightning-card>
+</template>

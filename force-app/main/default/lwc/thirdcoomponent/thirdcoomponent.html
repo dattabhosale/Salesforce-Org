@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Third Component" >
+        <div class="slds-m-around_small">
+            <lightning-input type="text" label="Enter Name" onkeyup={objhand}></lightning-input>
+            <div>Hello How are you {obj.fname}</div>
+        </div>
+    </lightning-card>
+    <lightning-card title="Third component with button">
+        <lightning-button variant="brand" label="Button" title="Primary action" onclick={click} class="slds-m-top_medium"></lightning-button>
+        <template if:true={isvisible}>
+            <div>You pressed button</div>
+        </template>
+    </lightning-card>
+    <lightning-card>
+        <div class="slds-m-around_small">
+            <lightning-input type="text" label="Enter value" onkeyup={pressed}></lightning-input>
+            <template if:true={a}>
+                <div>Hello Entered value matched</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

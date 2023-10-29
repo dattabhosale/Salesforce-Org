@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Integration Call">
+        <div class="slds-var-m-around_small">
+            <lightning-input type="text" label="Enter Pincode" onchange={onChangeHandler}></lightning-input>
+            <lightning-button variant="brand" label="Get" title="Primary action" onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Reset" title="Primary action" onclick={handleClick1} class="slds-var-m-left_x-small"></lightning-button>
+            <template if:true={isVisible}>
+                <template for:each={receivedName} for:item="a">
+                    <div key={receivedName}>Name : {a}</div>
+                </template>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

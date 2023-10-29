@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Child Component">
+        <div class="slds-m-around_small">
+            <div>Entered Value is : {disp}</div>
+            <lightning-input type="text" label="Enter Value" onkeyup={changeHandler}></lightning-input>
+            <div>IN CHILD COMPONENT</div>
+            <div>Course Name is : {details.courseName}</div>
+            <div>Date Name is : {details.lauchedDate}</div>
+            <div>Location is : {details.Location}</div>
+            <div>Name is : {det.Name}</div>
+            <div>Location is : {det.Loc}</div>
+            <slot name="first"></slot>
+            <slot name="second"></slot>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <div>I Am in Parent Component</div>
+            <div>Entered Value is - {val}</div>
+            <c-child-com-first
+            onupdatevalue={updateHandler}
+            >
+
+            </c-child-com-first>
+        </div>
+    </lightning-card>
+</template>

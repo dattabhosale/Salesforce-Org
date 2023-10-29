@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div>Parent Component</div>
+        <div>Entered Value form Child Component : {childVal}</div>
+        <c-new-child-component
+        msg="msg send from parent"
+        onvaluesendhanlder={receviedSendValue}
+        >
+
+        </c-new-child-component>
+    </lightning-card>
+</template>

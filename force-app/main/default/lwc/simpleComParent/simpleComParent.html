@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <div>Parent Component</div>
+            <div>Received Value is : {reVal}</div>
+            <div>Value is : {course}</div>
+            <c-simple-com-child
+            oninputvalue={receivedValue}
+            >
+            </c-simple-com-child>
+        </div>
+    </lightning-card>
+</template>

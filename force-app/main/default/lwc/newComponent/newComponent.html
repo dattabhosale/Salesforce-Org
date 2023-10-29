@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Query Selector">
+        <div class="slds-m-around_medium">
+            <h1>Hello From Html File</h1>
+            <template for:each={arr} for:item=a>
+                <div class="ame" key={a}>{a}</div>
+            </template>
+            <div class="aa" lwc:dom="manual" >
+
+            </div>
+            <button onclick={fetchtag}>Fetch Details</button>
+        </div>
+    </lightning-card>
+</template>

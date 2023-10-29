@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title='Wire Demo' icon-name="standard:account" variant="base">
+      <div class="slds-var-m-around_small">
+        <lightning-combobox
+          name="type"
+          label="Type"
+          value={selectedType}
+          placeholder="Select Type"
+          options={typeOptions}
+          onchange={handleChange}
+        ></lightning-combobox>
+        <div>Selected Value : {selectedType}</div>
+      </div>
+    </lightning-card>
+</template>

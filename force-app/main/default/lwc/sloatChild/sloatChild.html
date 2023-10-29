@@ -1,0 +1,9 @@
+<template>
+    <div>What Technology You Work</div>
+    <div><slot name="first"></slot></div>
+    <div>When Salesforce Technology lauched</div>
+    <slot name="second"></slot>
+    <footer class="slds-card__footer slds-hide">
+        <slot name="footer" onslotchange={changeslot}></slot>
+    </footer>
+</template>

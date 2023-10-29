@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Type Picklist">
+        <lightning-combobox 
+        name="type" 
+        label="Type" 
+        value={selectedValue} 
+        placeholder="Select Type" 
+        options={typeOptions}
+        onchange={handleChange}>
+        </lightning-combobox>
+
+        <p>Selected value is: {selectedValue}</p>
+    </lightning-card>
+</template>

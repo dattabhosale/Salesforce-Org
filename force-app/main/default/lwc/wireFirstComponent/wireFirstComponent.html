@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Wire Demo">
+        <div class="slds-p-around_medium">
+            <div>{userId}</div>
+            <template if:true={userDetails}>
+                <div>Name - {userDetails.Name.value}</div>
+                <div>Email - {userDetails.Email.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="Wire Demo using Property">
+        <div class="slds-m-around_medium">
+            <template if:true={wireFunctionProperty.data}>
+                <div>Name - {wireFunctionProperty.data.fields.Name.value}</div>
+                <div>Email - {wireFunctionProperty.data.fields.Email.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="Wire Demo Using Reactive Property">
+        <div class="slds-m-around_medium">
+            <template if:true={userInfo}>
+                <div>Name - {userInfo.Name.value}</div>
+                <div>Email - {userInfo.Email.value}</div>
+                <div>Username - {userInfo.Username.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

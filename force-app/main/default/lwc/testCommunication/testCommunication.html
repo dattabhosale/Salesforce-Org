@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Parnet Component">
+        <div class="slds-m-around_small">
+            <div>Hello From Parnet Component</div>
+            <div>Entered Value - {m}</div>
+            <div>{m}</div>
+
+            <c-test-child-component
+                msg="Msg Send From Parent"
+                visible={visible}
+                course={course}
+                num={num}
+                oninputvaluechange = {inputHandler}
+                >
+                
+            </c-test-child-component>
+        </div>
+    </lightning-card>
+</template>

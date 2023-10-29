@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Parent Componet">
+        <div class="slds-m-around_small">
+            <div>IN PARENT COMPONENT</div>
+            <div>Entered Value is : {newValue}</div>
+            <c-all-child-component 
+            onchangevalue={receive}
+            name-details='This Msg Send From Parnet' 
+            details={courseDetails} 
+            det={simpleData} >
+            <div slot="first">Hello From Parent using Slot</div>
+            <div slot="second">Hi how are you?</div>
+            </c-all-child-component>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="PickList By Record Type Id">
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={ratingOptions}>
+                <lightning-combobox name="rating" label="Rating" value={selectedRating} placeholder="Rating"
+                    options={ratingOptions} onchange={changeHandler}></lightning-combobox>
+                <div>selected Value is :{selectedRating}</div>
+            </template>
+
+
+        </div>
+
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={typeOptions}>
+                <lightning-combobox name="type" label="Type" value={selectedType} placeholder="Type"
+                    options={typeOptions} onchange={changeHandler}></lightning-combobox>
+                    <div>selected Value is :{selectedType}</div>
+            </template>
+
+        </div>
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={activeOptions}>
+                <lightning-combobox name="active" label="Active" value={selectedActive} placeholder="Active"
+                    options={activeOptions} onchange={changeHandler}></lightning-combobox>
+                <div>selected Value is :{selectedActive}</div>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

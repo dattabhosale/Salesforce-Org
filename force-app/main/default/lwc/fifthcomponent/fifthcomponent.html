@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Hello Fifth Component">
+        <div class="slds-m-around_small">
+            <div>Enter text in below field</div>
+            <lightning-input type="text" label="Please Enter value" onkeyup={aa}></lightning-input>
+            <div>Entered Value is {a}</div>
+            <template lwc:if={getv}>
+                <div>You Enter Hello Value</div>
+            </template>
+            <template lwc:else>
+                <div>You Eneterd {a} Value</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

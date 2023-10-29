@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Wire Picklist Demo">
+        <lightning-combobox
+            name="Industry"
+            label="Industry"
+            value={selectedIndustry}
+            placeholder="Select Industry"
+            options={industryOption}
+            onchange={handleChange} ></lightning-combobox>
+    </lightning-card>
+</template>

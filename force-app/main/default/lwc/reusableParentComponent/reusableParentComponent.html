@@ -1,0 +1,19 @@
+<template>
+    <!--<lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Card Title
+        </h3>
+        <div slot="footer">
+                <lightning-badge label="Tag1"></lightning-badge>
+                <lightning-badge label="Tag2"></lightning-badge>
+                <lightning-badge label="Tag3"></lightning-badge>
+        </div>
+        <p class="slds-p-horizontal_small">Card Body (custom component)</p>
+        
+    </lightning-card>-->
+    <c-reusable-child-component>
+        <div slot="body">This msg send from parent component for body</div>
+        <div slot="footerbody">This msg send from parent for footer</div>
+    </c-reusable-child-component>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <div>value is : {abc}</div>
+            <c-child-to-parent-c
+            onkeyevent={changehandler1}
+            objdetails="Hello"
+            c-data={array}
+            >
+            </c-child-to-parent-c>
+        </div>
+    </lightning-card>
+</template>

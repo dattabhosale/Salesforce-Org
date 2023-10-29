@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Wire Example">
+        <div class="slds-m-around_medium">
+            <div>User Id - {userId}</div>
+            <template if:true={userDetails.data}>
+                <div>User Id - {userId}</div>
+                <div>Name - {userDetails.data.fields.Name.value}</div>
+                <div>Email - {userDetails.data.fields.Email.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="Wire Demo with function property">
+        <div class="slds-m-around_medium">
+            <template if:true={wireExamp}>
+                <div>Name - {wireExamp.Name.value}</div>
+                <div>Email - {wireExamp.Email.value}</div>
+                <div>Alias - {wireExamp.Alias.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="get object info">
+        <div class="slds-p-around_medium">
+            <template if:true={objectInfo.data}>
+                <div>Object API Name - {objectInfo.data.apiName}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

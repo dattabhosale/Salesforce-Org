@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Wire Demo Example">
+        <div class="slds-p-around_medium">
+            <template lwc:if={userDetails}>
+                <div>Name - {userDetails.Name.value}</div>
+                <div>Email - {userDetails.Email.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

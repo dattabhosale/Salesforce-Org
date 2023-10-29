@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Fourth Component">
+        <div class="slds-m-around_small">
+            <div>Enter text in below field</div>
+            <lightning-input type="text" label="Enter Value" onkeyup={clickhandler}></lightning-input>
+            <div>Your Name is {a}</div>
+            <lightning-button variant="brand" label="Button" title="Primary action" onclick={click1} class="slds-m-top_medium"></lightning-button>
+            <template lwc:if={isvisble}>
+                <div>You Pressed button</div>
+            </template>
+            <template lwc:else>
+                <div>You enter another number</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="For Each Loop">
+        <div class="slds-m-around_medium">
+            <template for:each={carList} for:item="car">
+                <div key={car}>{car}</div>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="Itertor Loop">
+        <div class="slds-m-around_medium">
+            <template iterator:it={ceoList}>
+                <div key={it.value.id}>{it.value.Name}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

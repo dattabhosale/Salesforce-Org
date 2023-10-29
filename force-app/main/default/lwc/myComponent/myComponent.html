@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="My Component">
+        <div class="slds-m-around_medium">
+            <div>Value is : {dynamic}</div>
+            <lightning-input type="text" title="Enter Value" label="Enter Value" onkeyup={onchangehandler}></lightning-input>
+            <template for:each={arr} for:item="item">
+                <div key={item}>{item}</div>
+            </template>
+        </div>
+        <div class="slds-m-around_small">
+            <template lwc:if={istrue}>
+                <div>Value is :{obj.dynamicvalue}</div>
+                <lightning-input type="text" label="Enter Value" onkeyup={onchangehandler1}></lightning-input>
+            </template>
+        </div>
+    </lightning-card>
+</template>

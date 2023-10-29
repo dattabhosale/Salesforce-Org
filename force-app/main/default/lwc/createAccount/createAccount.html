@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Record Lightning Component">
+        <lightning-record-form
+        object-api-name={objectName}
+        fields={allFields}
+        onsuccess={successHandler}
+        >
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="Record Lightning read Component">
+        <lightning-record-form
+        record-id={recid}
+        object-api-name={objectName}
+        fields={allFields}
+        mode="readonly"
+        >
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="Record Lightning edit Component">
+        <lightning-record-form
+        record-id={recid}
+        object-api-name={objectName}
+        fields={allFields}
+        mode="edit"
+        >
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="Record Lightning edit Component">
+        <lightning-record-form
+        record-id={recid}
+        object-api-name={objectName}
+        fields={allFields}
+        mode="edit"
+        columns="3"
+        >
+        </lightning-record-form>
+    </lightning-card>
+</template>

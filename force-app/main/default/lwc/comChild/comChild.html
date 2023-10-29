@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Child Component">
+        <div class="slds-m-around_medium">
+            <div>Child Component</div>
+            <div>Received Value From Parent is {receivedValue}</div>
+            <div>Enterd Value : {inputVal}</div>
+            <lightning-input type="text" label="value" onkeyup={KeyHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>

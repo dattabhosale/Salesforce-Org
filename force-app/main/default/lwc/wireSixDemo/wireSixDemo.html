@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Wire Sixth Demo ">
+        <div class="slds-m-around_small">
+            <div>User ID - {userId}</div>
+            <template lwc:if={userDetail}>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <span>NAME - {userDetail.Name.value}</span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-2">
+                        <span>Email - {userDetail.Email.value}</span>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

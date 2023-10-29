@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="modes" type="List" default="[
+    {'label': 'Easy', 'value': 'easy'},
+    {'label': 'Medium', 'value': 'medium'},
+    {'label': 'Hard', 'value': 'hard'},
+    ]"/>
+    <lightning:card  title="Board Game">
+        <lightning:layout horizontalAlign = "Center">
+            <lightning:layoutItem padding="around-small">
+                <lightning:combobox name="Game Modes" label="Game Modes" variant="label-hidden" value="Easy" placeholder="Select Game Mode" options="{! v.modes }"/>
+            </lightning:layoutItem>
+        
+            <lightning:layoutItem padding="around-small">
+                <lightning:button variant="brand" label="Start Game" title="Start Game" onclick = "{!c.start}" />
+            </lightning:layoutItem>
+        
+            <lightning:layoutItem  padding="around-small">
+                <lightning:button label="Shuffle" title="Shuffle" onclick="{!c.reshuffle}" />
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

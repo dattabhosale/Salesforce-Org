@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <div>In Parent Component</div>
+            <div>Received From Child - {disp}</div>
+            <c-com-child onsendvalue={receivedEvent}
+            received-value={examp}
+            >
+
+            </c-com-child>
+        </div>
+    </lightning-card>
+</template>
