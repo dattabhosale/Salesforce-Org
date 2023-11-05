@@ -7,18 +7,17 @@ public with sharing class getNameFromPincode {
         HttpRequest request = new HttpRequest();
         request.setEndpoint(endpoint);
         request.setMethod('GET');
-        HttpResponse responce = h.send(request);
-        String body = responce.getBody();
+        HttpResponse resp = h.send(request);
+        System.debug('Responce '+resp);
+        String body = resp.getBody();
+        System.debug('BODY =='+body);
         System.JSONParser jp = JSON.createParser(body);
         while(jp.nextToken()!=NULL){
             if(jp.getText()=='Name'){
                 jp.nextToken();
                 returnName.add(jp.getText());
             }
-            if(jp.getText()=='Circle'){
-                jp.nextToken();
-                returnName.add(jp.getText());
-            }
+
         }
         return returnName;
     }

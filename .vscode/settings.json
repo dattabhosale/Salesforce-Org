@@ -5,5 +5,8 @@
     "**/.sfdx": true
   },
   "salesforcedx-vscode-core.show-cli-success-msg": false,
-  "salesforcedx-einstein-gpt.enableEinsteinGPT": true
+  "salesforcedx-einstein-gpt.enableEinsteinGPT": true,
+  "salesforcedx-vscode-apex.java.home": "C:\\Program Files\\Java\\jdk-17",
+  "salesforcedx-vscode-apex.advanced.enable-completion-statistics": true,
+  "salesforcedx-vscode-apex.enable-semantic-errors": true
 }
