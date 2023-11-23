@@ -6,6 +6,7 @@ public class setExample {
         s.add(5);
         s.add(3);
         System.debug('Set element after adding 5 and 3 :'+s);
+        System.debug('Set element after adding 5 and 3 :'+s);
     }
 
 }
